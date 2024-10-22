@@ -20,7 +20,7 @@
 ;;        (setq doom-themes-enable-bold t
 ;;              doom-themes-enable-italic t))
 
-;; Customize code fonts 
+;; Customize code fonts
 ;; Docs:
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Faces-for-Font-Lock.html
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Attributes.html
@@ -48,7 +48,7 @@
   :config
   (setq calendar-latitude 19.0)
   (setq calendar-longitude -99.1)
-  (setq circadian-themes '((:sunrise . tsdh-light)
+  (setq circadian-themes '((:sunrise . default)
                            (:sunset  . doom-moonlight)))
   (circadian-setup))
 
