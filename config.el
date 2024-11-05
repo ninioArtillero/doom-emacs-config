@@ -1,4 +1,4 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;; Configuraciones generales ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Doom Emacs Config ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq user-full-name "Xavier Góngora"
       user-mail-address "ixbalanque@protonmail.ch")
@@ -12,8 +12,6 @@
 (setq display-line-numbers-type 'true)
 
 (setq org-directory "~/org/")
-
-;;;;;;;;;;;;;;;;;;;;;;;;;; Personalización de interfaz ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Enable bold and italics
 ;;(after! doom-themes
@@ -113,7 +111,6 @@
 ;;      (not (equal ispell-local-dictionary "es_MX"))
 ;;      (typopunct-mode 0)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;; Development ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Default for common-lisp is sbcl
 (setq inferior-lisp-program "clisp")
