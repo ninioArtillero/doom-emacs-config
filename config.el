@@ -7,7 +7,7 @@
       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15)
       doom-big-font (font-spec :family "Hasklig" :size 24))
 
-(setq doom-theme 'doom-moonlight) ; fallback theme
+(setq doom-theme 'doom-one-light) ; fallback theme
 
 (setq display-line-numbers-type 'true)
 
@@ -46,7 +46,7 @@
   :config
   (setq calendar-latitude 19.0)
   (setq calendar-longitude -99.1)
-  (setq circadian-themes '((:sunrise . default)
+  (setq circadian-themes '((:sunrise . doom-one-light)
                            (:sunset  . doom-moonlight)))
   (circadian-setup))
 
@@ -115,13 +115,12 @@
 ;; Default for common-lisp is sbcl
 (setq inferior-lisp-program "clisp")
 
-;; haskell-language-server configuration
+;; HLS configuration
 ;; https://haskell-language-server.readthedocs.io/en/latest/configuration.html#language-specific-server-options
 (after! lsp-haskell
   (setq lsp-haskell-formatting-provider "stylish-haskell")
-  ;;   (setq lsp-haskell-plugin-ormolu-config-external t)
-  ;;   (setq lsp-haskell-check-project t) ;typecheck whole project on initial load
-  ;;   (setq lsp-haskell-check-parents "CheckOnSave") ;typecheck reverse dependencis of file
+  ;;   (setq lsp-haskell-check-project false) ;typecheck whole project on initial load
+  ;;   (setq lsp-haskell-check-parents "NeverCheck") ;check reverse dependencies of a file
   )
 
 ;; Change default Tidal boot script
