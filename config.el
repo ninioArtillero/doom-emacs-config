@@ -9,7 +9,7 @@
 
 (setq doom-theme 'doom-one-light) ; fallback theme
 
-(setq display-line-numbers-type 'true)
+(setq display-line-numbers-type 'relative)
 
 (setq org-directory "~/org/")
 
@@ -156,3 +156,5 @@
 (setq-default vterm-shell (executable-find "fish"))
 
 (setq-default explicit-shell-file-name (executable-find "fish"))
+
+(use-package! chuck-mode)

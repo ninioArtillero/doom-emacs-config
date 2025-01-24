@@ -54,3 +54,6 @@
 (package! circadian)
 
 (package! typopunct)
+
+(package! chuck-mode
+  :recipe (:host github :repo "jintwo/chuck-mode"))
